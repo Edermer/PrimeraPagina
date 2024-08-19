@@ -1,0 +1,96 @@
+/* Estilos Generales */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Fondo de color claro */
+    color: #333; /* Texto oscuro */
+}
+
+/* Estilos para header */
+header{
+    background-color: #4a90e2; /* Azul claro */
+    color: white; /* podemos usar código hexadecimal como los nombres de los colores en ingles */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para nav */
+nav {
+    background-color: #333; /* fondo oscuro */
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+/* Estilos para main */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Estilos para article */
+article {
+    background-color: white;
+    border-radius: 8px; /* esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra suave */
+    margin: 20px;
+    padding: 20px;
+    flex: 1 1 300px
+    max-width: 500px;
+}
+
+article h2 {
+    color: #4a90e2; /* color azul para títulos */
+}
+
+/* Estilos para aside */
+aside {
+    background-color: #f4f4f9; /* fondo claro */
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    flex: 1 1 300px;
+    max-width: 300px;
+}
+
+aside h2 {
+    color: #333; /* color oscuro para títulos */
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #333; /* fondo oscuro */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%
+}
+
+/* Estilos Responsive */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article, aside {
+        max-width: 90%
+    }
+}
